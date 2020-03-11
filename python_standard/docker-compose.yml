@@ -1,0 +1,11 @@
+version: '3'
+services:
+  jupyterlab:
+    container_name: python3
+    command: sleep infinity
+    image: python-standard:v0.1
+    volumes:
+       - ./xxx/project:/project
+       - ./xxx/data:/data
+    ports:
+      - 8888:8888
